@@ -1,0 +1,80 @@
+.causa {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  right: 10%;
+}
+
+.info {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.causa img {
+  margin: 20px;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  box-shadow: 0 0 40px;
+  cursor: pointer;
+}
+.causa img:hover {
+  transition: 0.4s;
+  box-shadow: 0 10px 100px rgba(197, 231, 197, 0.7);
+}
+
+.causa .divimg {
+  text-align: center;
+}
+
+.contenido2 {
+  opacity: 0;
+  height: auto;
+  overflow: hidden;
+  transition: opacity 2s ease, transform 0.6s ease; /* Añadimos transform para manejar el movimiento */
+  transform: translateX(-100%);
+  width: 400px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.mostrar2 {
+  display: block;
+  opacity: 1;
+  height: auto;
+  max-width: 550px; /* Ajusta este valor según la altura esperada del contenido */
+  transform: translate(0);
+  background-color: rgba(256, 256, 256, 0.5);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.ocultar {
+  display: block;
+  opacity: 0;
+  max-height: 80px;
+  max-width: 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 25px;
+}
+
+.hiddenRight {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.visibilityRight {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s ease-in-out, visibility 1s ease-in-out;
+}

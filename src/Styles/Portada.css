@@ -1,0 +1,85 @@
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+.fondo {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  filter: brightness(0.85);
+  background-size: cover;
+}
+.fondo .color {
+  width: 22%;
+  height: 100%;
+  background-color: #624100;
+}
+.fondo .imagen-fondo {
+  background-image: url("/planet.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 78%;
+  height: 100%;
+}
+
+.conteiner-text {
+  color: #fff;
+  padding: 8% 20% 0% 10%;
+}
+.conteiner-text .contest {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+.conteiner-text .challenge .linksito {
+  text-decoration: none;
+  color: inherit;
+}
+.conteiner-text .challenge {
+  font-weight: 900;
+  font-size: 100px;
+  cursor: pointer;
+  padding: 2%;
+  border-left: solid 5px #fff;
+}
+.conteiner-text .challenge:hover {
+  background-color: rgba(200, 200, 200, 0.6);
+  color: #624100;
+  -webkit-text-stroke: 2px #624100;
+  border-radius: 50px;
+  border-left: solid 5px transparent;
+}
+.conteiner-text .challenge:hover .p2 {
+  -webkit-text-stroke: 2px #624100;
+}
+
+.conteiner-text .challenge p {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.conteiner-text .challenge .p2 {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.conteiner-text .team .p1 {
+  margin: 10% 0 1%;
+  font-weight: 400;
+  font-size: 35px;
+}
+.conteiner-text .team .p2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 60px;
+}
+.conteiner-text button {
+  display: inline;
+}

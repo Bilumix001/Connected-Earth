@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 18px;
+  width: 99vw;
+  height: 100vh;
+}
+
+.img-galery {
+  background-image: url("/planet.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+h4,
+.contenedor-principal,
+h6,
+.gale1 {
+  position: relative;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 750px;
+  height: 80px;
+  padding-top: 23px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+}
+
+h6 {
+  font-size: 2.5em;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 50px auto;
+
+  width: 30%;
+  height: 80px;
+  padding-top: 23px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+}
+
+.contenedor-principal {
+  max-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.gale1 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}

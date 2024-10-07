@@ -1,0 +1,61 @@
+.person{
+    position: relative;
+    margin-right: -13px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    object-fit:  cover;
+    transition: all 0.5s ease-in-out;
+}
+.person img:hover{
+
+    transform: translateY(-2px) translateX(5px);
+    transition: all 0.2s ease-in-out;
+}
+.person .name{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    
+    min-width: 100px;
+    width: 150px;
+    right: 0;
+    top: 120%;
+    display: none;
+    padding: 10px 15px;
+
+}
+.person:hover .name{
+    display: inline-block;
+}
+
+.person .name .text{
+    display: flex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align:center;
+    box-sizing: border-box;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.person .name::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: solid  10px transparent;
+    border-bottom: solid  10px #000;
+    border-left: solid  10px transparent;
+    border-right: solid  10px transparent;
+    left: 83%;
+    bottom: 100%;
+}
